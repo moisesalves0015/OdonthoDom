@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+.MenuSuperior{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 20px 25px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white
+    ;
+}
+
+.MenuSuperior ul{  
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin-inline: 80px;
+
+
+}
+
+.MenuSuperior ul li{  
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    color:#33425F;
+    font-weight: 500;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.MenuSuperior ul li:hover {
+    transform: translateY(-5px); /* Move o botão 5px para cima */
+     border: solid 0 white;
+     cursor: pointer;
+}
+.MenuSuperior img {
+   
+width: 120px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção da imagem */
+
+
+}
+.MenuSuperior button {
+    background-color: #33425F;
+    color:white;
+    width: 270px; /* Define um tamanho máximo */
+    height: 50px; /* Mantém a proporção da imagem */
+    margin-block: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza a animação */
+}
+.MenuSuperior button:hover {
+    transform: translateY(-5px); /* Move o botão 5px para cima */
+     border: solid 0 white;
+}
+
+
