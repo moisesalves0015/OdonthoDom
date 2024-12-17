@@ -1,75 +1,131 @@
-
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
   
-body {
+  body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
-}
-
-.MenuSuperior{
+  }
+  
+  /* Menu Superior */
+  .MenuSuperior {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     color: #fff;
-    padding: 20px 25px;
+    padding: 10px 25px;
     z-index: 1000;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    background-color: white
-    ;
-}
-
-.MenuSuperior ul{  
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MenuSuperior img {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Botão Menu Hambúrguer */
+  .MenuToggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #33425F;
+  }
+  
+  .MenuSuperior ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 100%;
     align-items: center;
-    margin-inline: 80px;
-
-
-}
-
-.MenuSuperior ul li{  
-    text-align: center;
-    justify-items: center;
-    justify-content: center;
-    color:#33425F;
+    gap: 30px;
+    margin: 0 50px;
+  }
+  
+  .MenuSuperior ul li {
+    color: #33425F;
     font-weight: 500;
     transition: transform 0.3s ease, color 0.3s ease;
-
-}
-
-.MenuSuperior ul li:hover {
-    transform: translateY(-5px); /* Move o botão 5px para cima */
-     border: solid 0 white;
-     cursor: pointer;
-}
-.MenuSuperior img {
-   
-width: 120px; /* Define um tamanho máximo */
-    height: auto; /* Mantém a proporção da imagem */
-
-
-}
-.MenuSuperior button {
+  }
+  
+  .MenuSuperior ul li:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+    color: #3b82f6;
+  }
+  
+  /* Botão Agendar Consulta */
+  .BotaoAgendar {
     background-color: #33425F;
-    color:white;
-    width: 270px; /* Define um tamanho máximo */
-    height: 40px; /* Mantém a proporção da imagem */
-    margin-block: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
-    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza a animação */
-}
-.MenuSuperior button:hover {
-    transform: translateY(-5px); /* Move o botão 5px para cima */
-     border: solid 0 white;
-}
-
-
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .BotaoAgendar:hover {
+    transform: translateY(-3px);
+    background-color: #3b82f6;
+    cursor: pointer;
+  }
+  
+  /* Responsividade para tablets e celulares */
+  @media (max-width: 1024px) {
+    .MenuSuperior {
+      padding: 10px 15px;
+    }
+  
+    .MenuSuperior img {
+      width: 80px;
+    }
+  
+    .MenuToggle {
+      display: none; /* Mostra o botão hambúrguer */
+    }
+  
+    .MenuSuperior ul {
+      display: none; /* Oculta o menu */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Exibe o menu quando a classe MenuAberto está ativa */
+    .MenuSuperior ul.MenuAberto {
+      display: flex;
+    }
+  
+    .BotaoAgendar {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .MenuSuperior img {
+      width: 60px;
+    }
+  
+    .BotaoAgendar {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+  

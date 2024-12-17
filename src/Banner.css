@@ -1,55 +1,130 @@
+/* Container principal */
 .BannerConteiner {
     background-color: #DBEFFA;
     height: 440px;
     border-radius: 25px;
-    margin: 20px;
+    margin: 20px auto;
     width: 95%;
-    margin-inline: auto;
-}
-.BannerConteiner div{
-max-width:50%;
-padding: 3rem;
-}
-.BannerConteiner div h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Ajustes gerais do conteúdo */
+  .BannerConteiner div {
+    max-width: 50%;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  
+  .BannerConteiner div h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
     font-weight: 500;
-}
-.BannerConteiner div p{
+    color: #33425F;
+  }
+  
+  .BannerConteiner div p {
     margin-bottom: 2rem;
-
-}
-.BannerConteiner div section{
+    font-size: 1.2rem;
+    color: #33425F;
+    line-height: 1.5;
+  }
+  
+  .BannerConteiner div section {
     display: flex;
-    flex-direction:row;
-    justify-content: center;
+    align-items:flex-start;
     justify-content: space-between;
-}
-.BannerConteiner div section section{
+    flex-wrap: wrap; /* Permite quebra em telas pequenas */
+    
+  }
+  
+  .BannerConteiner div section section {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
-    margin: 0 3rem 0 0;
-}
-.BannerConteiner div section img{
-   width:50px;
-   margin: 0 0.5rem 0 3rem;
-
-}
-
-.BannerConteiner button{
-
-    background-color: #33425F;
-    color:white;
-    width: 240px; /* Define um tamanho máximo */
-    height: 50px; /* Mantém a proporção da imagem */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);   
-    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza a animação */
     margin: 0;
-    left:0px;
-}
-
-.BannerConteiner button:hover {
-    transform: translateY(-5px); /* Move o botão 5px para cima */
-     border: solid 0 white;
-}
+    text-align: center;
+    margin-right: auto;
+  }
+  
+  .BannerConteiner div section img {
+    width: 50px;
+    margin: 0 0.5rem;
+  }
+  
+  /* Botão de Agendamento */
+  .BannerConteiner button {
+    background-color: #33425F;
+    color: white;
+    width: 240px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .BannerConteiner button:hover {
+    transform: translateY(-5px);
+    background-color: #3b82f6;
+    cursor: pointer;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1024px) {
+    .BannerConteiner {
+      flex-direction: column; /* Empilha os elementos */
+      height: auto;
+      padding: 1.5rem;
+    }
+  
+    .BannerConteiner div {
+      max-width: 100%;
+      padding: 1.5rem;
+      text-align: center;
+    }
+  
+    .BannerConteiner div h1 {
+      font-size: 2.5rem;
+    }
+  
+    .BannerConteiner div p {
+      font-size: 1.1rem;
+    }
+  
+    .BannerConteiner div section {
+      flex-direction: column; /* Alinha verticalmente */
+      gap: 1rem;
+    }
+    
+  
+    .BannerConteiner button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .BannerConteiner div h1 {
+      font-size: 2rem;
+    }
+  
+    .BannerConteiner div p {
+      font-size: 1rem;
+    }
+  
+    .BannerConteiner div section img {
+      width: 40px;
+    }
+  
+    .BannerConteiner button {
+      width: 90%;
+      height: 45px;
+      font-size: 0.9rem;
+    }
+  }
+  
