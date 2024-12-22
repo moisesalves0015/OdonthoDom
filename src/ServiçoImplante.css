@@ -1,37 +1,85 @@
 /* Container principal */
 .ServicoContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    flex-wrap: wrap;
-  }
-  
-  /* Lado esquerdo: Texto e botão */
-  .ServicoTexto {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .ServicoTexto h2 {
-    font-size: 2rem;
-    color: #33425F;
-    margin-bottom: 10px;
-  }
-  
-  .ServicoTexto p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #555;
-  }
-  
-  .ServicoTexto button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+
+  border-radius: 10px;
+
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Lado esquerdo: Texto e botão */
+.ServicoTexto {
+  flex: 1;
+  padding: 10px 50px;
+  text-align: left;
+}
+
+.ServicoTexto h2 {
+  font-size: 2rem;
+  color: #33425F;
+  margin-bottom: 10px;
+}
+
+.ServicoTexto p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.ServicoTexto button {
+  background-color: #33425F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ServicoTexto button:hover {
+  background-color: #3b82f6;
+  transform: scale(1.05);
+}
+
+/* Lado direito: Imagem */
+.ServicoImagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ServicoImagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Div expandida: Mais informações e fotos */
+.ServicoDetalhes {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #DBEFFA;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.ServicoDetalhes p {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 1rem;
+  margin-inline: 80px ;
+}
+
+.ServicoDetalhes button{
     background-color: #33425F;
     color: white;
     border: none;
@@ -40,87 +88,59 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+ 
+}
+
+.ServicoFotos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ServicoFotos img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ServicoImagemPrincipal{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+/* Animação para a área expandida */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  
-  .ServicoTexto button:hover {
-    background-color: #3b82f6;
-    transform: scale(1.05);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Lado direito: Imagem */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .ServicoContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ServicoTexto {
+    padding: 10px;
+  }
+
   .ServicoImagem {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .ServicoImagem img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Div expandida: Mais informações e fotos */
-  .ServicoDetalhes {
     margin-top: 20px;
-    padding: 20px;
-    background-color: #DBEFFA;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease-in-out;
   }
-  
-  .ServicoDetalhes p {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 1rem;
-  }
-  
-  .ServicoFotos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
+
   .ServicoFotos img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 370px;
   }
-  
-  /* Animação para a área expandida */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .ServicoContainer {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .ServicoTexto {
-      padding: 10px;
-    }
-  
-    .ServicoImagem {
-      margin-top: 20px;
-    }
-  
-    .ServicoFotos img {
-      width: 120px;
-    }
-  }
-  
+}

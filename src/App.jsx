@@ -11,7 +11,9 @@ function App() {
       <Menu />
       <Banner />
       <ServiçoImplante />
-    
+      <ServiçoImplante />
+      <ServiçoImplante />
+      <ServiçoImplante />
     </>
   );
 }
