@@ -88,8 +88,13 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-block: 20px;
  
 }
+.ServicoDetalhes button:hover {
+    background-color: #3b82f6;
+    transform: scale(1.05);
+  }
 
 .ServicoFotos {
   display: flex;
@@ -107,6 +112,16 @@
 .ServicoFotos button {
     width: 400px;
 
+    background-color: #33425F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: crescerDiminuir 2s infinite; /* Adiciona a animação */
+    border: none;
   }
 .ServicoImagemPrincipal{
     width: 400px;
@@ -144,7 +159,21 @@
   }
 
   .ServicoFotos img {
+    
     width: 370px;
+  }
+  .ServicoFotos button {
+    background-color: #33425F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: crescerDiminuir 2s infinite; /* Adiciona a animação */
+    width: 370px;
+    border: none;
   }
   
 
@@ -154,4 +183,12 @@
     font-size: 1rem;
     margin-inline: 10px ;
   }
+}
+@keyframes crescerDiminuir {
+    0%, 100% {
+        transform: scale(1); /* Tamanho original */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta em 10% */
+    }
 }

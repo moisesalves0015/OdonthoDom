@@ -57,7 +57,7 @@
   }
   
   .MenuSuperior ul li:hover {
-    transform: translateY(-3px);
+    transform: scale(1.05);
     cursor: pointer;
     color: #3b82f6;
   }
@@ -67,7 +67,7 @@
     background-color: #33425F;
     color: white;
     padding: 10px 20px;
-    border: none;
+    border: solid 0 black;
     border-radius: 20px;
     font-size: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -75,8 +75,8 @@
   }
   
   .BotaoAgendar:hover {
-    transform: translateY(-3px);
     background-color: #3b82f6;
+    transform: scale(1.05);
     cursor: pointer;
   }
   

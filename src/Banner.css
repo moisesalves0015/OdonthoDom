@@ -1,7 +1,7 @@
 /* Container principal */
 .BannerConteiner {
     background-color: #DBEFFA;
-    height: 440px;
+    height: auto;
     border-radius: 25px;
     margin: 20px auto;
     width: 90%;
@@ -69,8 +69,8 @@
   }
   
   .BannerConteiner button:hover {
-    transform: translateY(-5px);
     background-color: #3b82f6;
+    transform: scale(1.05);
     cursor: pointer;
   }
   
