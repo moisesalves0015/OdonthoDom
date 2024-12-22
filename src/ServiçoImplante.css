@@ -104,7 +104,10 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.ServicoFotos button {
+    width: 400px;
 
+  }
 .ServicoImagemPrincipal{
     width: 400px;
     height: auto;
@@ -142,5 +145,13 @@
 
   .ServicoFotos img {
     width: 370px;
+  }
+  
+
+  .ServicoDetalhes p {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1rem;
+    margin-inline: 10px ;
   }
 }
