@@ -1,5 +1,6 @@
 import React from 'react';
 import './Banner.css';
+import { FaRegCalendarAlt } from "react-icons/fa";
 
 function Banner() {
   return (

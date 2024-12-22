@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Menu.css';
+import { FaRegCalendarAlt } from "react-icons/fa";
 
 function Menu() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -26,7 +27,7 @@ function Menu() {
       </ul>
 
       {/* Botão de agendamento */}
-      <button className="BotaoAgendar">Agendar Consulta</button>
+      <button className="BotaoAgendar">Agendar Consulta  <FaRegCalendarAlt /></button>
     </nav>
   );
 }

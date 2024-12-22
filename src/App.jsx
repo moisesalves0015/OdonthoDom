@@ -4,7 +4,7 @@ import './App.css';
 import Menu from './Menu';
 import Banner from './Banner';
 import BotaoWhatsapp from './BotaoWhatsapp';
-import ServiçoImplante from './ServiçoImplante';
+import Serviços from './Serviços';
 
 function App() {
   return (
@@ -12,9 +12,7 @@ function App() {
       <Menu />
       <Banner />
       <BotaoWhatsapp />
-      <ServiçoImplante />
-      <ServiçoImplante />
-      <ServiçoImplante />
+      <Serviços />
     </>
   );
 }
