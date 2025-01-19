@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './DepoimentoFeed.css';
 
 function DepoimentoFeed() {
@@ -36,6 +36,9 @@ function DepoimentoFeed() {
   ];
 
   const carouselRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -47,24 +50,49 @@ function DepoimentoFeed() {
       carousel.appendChild(firstCard);
     };
 
-    // Clone o primeiro card para dar o efeito de loop
-   // cloneFirst();
+    // Clona o primeiro card para criar o loop
+    //cloneFirst();
 
     const interval = setInterval(() => {
-      if (carousel.scrollLeft >= carousel.scrollWidth - carousel.offsetWidth) {
-        carousel.scrollLeft = 0; // Volta ao início
-      } else {
-        carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+      if (!isDragging) {
+        if (carousel.scrollLeft >= carousel.scrollWidth - carousel.offsetWidth) {
+          carousel.scrollLeft = 0; // Volta ao início
+        } else {
+          carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+        }
       }
     }, 6000);
 
     return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
-  }, []);
+  }, [isDragging]);
+
+  const handleTouchStart = (e) => {
+    setIsDragging(true);
+    setStartX(e.touches[0].pageX - carouselRef.current.offsetLeft);
+    setScrollLeft(carouselRef.current.scrollLeft);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!isDragging) return;
+    const x = e.touches[0].pageX - carouselRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Multiplica para aumentar a sensibilidade
+    carouselRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
 
   return (
     <div className="DepoimentoFeed">
       <h2>O que nossos clientes dizem</h2>
-      <div className="Carousel" ref={carouselRef}>
+      <div
+        className="Carousel"
+        ref={carouselRef}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         {testimonials.map((testimonial, index) => (
           <div className="TestimonialCard" key={index}>
             <img

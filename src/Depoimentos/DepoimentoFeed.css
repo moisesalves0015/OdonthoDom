@@ -1,65 +1,75 @@
-/* Contêiner principal */
 .DepoimentoFeed {
-    padding: 2rem 1rem;
-    background-color: #f7f9fb;
+    padding: 20px;
+    background-color: #f9f9f9;
     text-align: center;
     max-width: 90%;
-    max-width: 300px;
-    overflow: hidden; /* Garante que nada ultrapasse o contêiner */
-    margin-inline: auto;    
-}
-  
-  .DepoimentoFeed h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: #33425f;
+    margin: 0 auto;
   }
   
-  /* Carrossel */
   .Carousel {
     display: flex;
-    gap: 1rem;
-    overflow: hidden; /* Esconde o scroll horizontal */
+    overflow-x: auto;
     scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .Carousel::-webkit-scrollbar {
+    display: none;
   }
   
   .TestimonialCard {
-    flex: 0 0 calc(100% / 3 - 1rem); /* Define a largura dos cards */
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    border-radius: 8px;
+    flex: 0 0 80%; /* Ocupa 80% da largura do container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
+    margin: 0 auto;
+    max-width: 30%;
   }
   
-  .TestimonialCard img {
-    width: 80px;
-    height: 80px;
+  .TestimonialPhoto {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    object-fit: cover;
+    margin-bottom: 10px;
   }
   
-  .TestimonialCard h3 {
+  .TestimonialName {
     font-size: 1.2rem;
-    color: #33425f;
-    margin-bottom: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
   
-  .TestimonialCard p {
+  .TestimonialText {
     font-size: 1rem;
     color: #555;
   }
-  
   /* Responsividade */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .TestimonialCard {
-      flex: 0 0 calc(100% / 2 - 1rem); /* Mostra 2 cards em telas menores */
+      width: 200px; /* Reduz a largura dos cards em telas menores */
+      padding: 15px;
+    }
+  
+    .Carousel {
+      gap: 15px;
     }
   }
   
   @media (max-width: 480px) {
     .TestimonialCard {
-      flex: 0 0 100%; /* Mostra 1 card em telas muito pequenas */
+      width: 180px; /* Ajusta para dispositivos muito pequenos */
+      padding: 10px;
+    }
+  
+    .Carousel {
+      gap: 10px;
     }
   }
-  
