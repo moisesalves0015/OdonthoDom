@@ -52,24 +52,3 @@
     color: #555;
   }
   /* Responsividade */
-@media (max-width: 768px) {
-    .TestimonialCard {
-      width: 200px; /* Reduz a largura dos cards em telas menores */
-      padding: 15px;
-    }
-  
-    .Carousel {
-      gap: 15px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .TestimonialCard {
-      width: 180px; /* Ajusta para dispositivos muito pequenos */
-      padding: 10px;
-    }
-  
-    .Carousel {
-      gap: 10px;
-    }
-  }
