@@ -5,6 +5,7 @@ import Menu from './Menu';
 import Banner from './Banner';
 import BotaoWhatsapp from './BotaoWhatsapp';
 import Serviços from './Serviços';
+import DepoimentoFeed from './Depoimentos/DepoimentoFeed';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Menu />
       <Banner />
       <BotaoWhatsapp />
-      <Serviços />
+      <DepoimentoFeed />
     </>
   );
 }
