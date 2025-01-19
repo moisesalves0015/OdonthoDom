@@ -13,6 +13,7 @@ function App() {
       <Menu />
       <Banner />
       <BotaoWhatsapp />
+      <Serviços />
       <DepoimentoFeed />
     </>
   );

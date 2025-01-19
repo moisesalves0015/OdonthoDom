@@ -85,7 +85,7 @@ function DepoimentoFeed() {
 
   return (
     <div className="DepoimentoFeed">
-      <h2>O que nossos clientes dizem</h2>
+      <h1>O que nossos clientes dizem</h1>
       <div
         className="Carousel"
         ref={carouselRef}
