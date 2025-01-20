@@ -13,6 +13,11 @@
   }
   .DepoimentoFeed h1{
 margin-inline: auto;
+font-size: 2rem;
+margin-bottom: 2rem;
+font-weight: 500;
+color: #33425F;
+text-align: center;
 
   }
   .Carousel {

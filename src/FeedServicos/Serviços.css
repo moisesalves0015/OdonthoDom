@@ -1,0 +1,25 @@
+.NossasEspecialidades{
+    padding: 30px;
+    color:  #33425F;
+
+    margin-inline: auto;
+
+}
+.NossasEspecialidades h1{
+
+margin-inline: auto;
+font-size: 2rem;
+margin-bottom: 2rem;
+font-weight: 500;
+color: #33425F;
+text-align: center;
+}
+
+.NossasEspecialidades p{
+    text-align: center;
+    margin-inline: auto;
+    margin-block: 60px;
+    font-size: 1 rem;
+    max-width: 830px;
+
+}

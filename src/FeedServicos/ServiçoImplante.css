@@ -2,14 +2,26 @@
 .ServicoContainer {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin: 20px auto;
-  padding: 20px;
-
   border-radius: 10px;
-
-  max-width: 1200px;
-  flex-wrap: wrap;
+  max-width: 80%;
+}
+.ServicoContainer2{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+.CaseImg{
+  width: 340px;
+  height: 230px;
+  background-color: #DBEFFA;
+  position: absolute;
+margin-left: 0px;
+  margin-top: -60px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Lado esquerdo: Texto e botão */
@@ -17,12 +29,14 @@
   flex: 1;
   padding: 10px 50px;
   text-align: left;
+max-width: 700px;
 }
 
 .ServicoTexto h2 {
   font-size: 2rem;
   color: #33425F;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .ServicoTexto p {
@@ -56,31 +70,42 @@
 }
 
 .ServicoImagem img {
-  max-width: 100%;
+
   height: auto;
   border-radius: 10px;
+
 }
 
 /* Div expandida: Mais informações e fotos */
 .ServicoDetalhes {
-  margin-top: 20px;
-  padding: 20px;
+  margin-bottom: 100px;
+  padding: 50px 20px 0 20px;
   background-color: #DBEFFA;
   border-radius: 10px;
-  width: 100%;
+max-width: 90%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.5s ease-in-out;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .ServicoDetalhes p {
   margin-bottom: 30px;
   color: #333;
   font-size: 1rem;
-  margin-inline: 80px ;
+max-width: 700px;
   text-align: left;
 }
 
-.ServicoDetalhes button{
+.ServicoDetalhes h2 {
+  margin-bottom: 30px;
+  color: #33425F;
+  text-align: left;
+
+}
+
+.ServicoDetalhes  button{
     background-color: #33425F;
     color: white;
     border: none;
@@ -102,16 +127,24 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .ServicoFotos img {
-  width: 350px;
+max-width: 300px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
-.ServicoFotos button {
-    width: 400px;
+.containeragendarespecialista {
+ display: flex;
+ flex-direction: column;
+
+ align-items: center;
+ margin: 40px 30px;
+}
+.botaoagendarespecialista {
 
     background-color: #33425F;
     color: white;
@@ -121,14 +154,19 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: crescerDiminuir 2s infinite; /* Adiciona a animação */
+    animation: crescerDiminuir 4s infinite; /* Adiciona a animação */
     border: none;
+
   }
 .ServicoImagemPrincipal{
-    width: 400px;
+    width: 320px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    position:relative;
+    margin-left: 70px;
+
 
 
 }
@@ -146,9 +184,10 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .ServicoContainer {
+  .ServicoContainer2 {
     flex-direction: column;
     text-align: center;
+   
   }
 
   .ServicoTexto {
@@ -157,11 +196,12 @@
 
   .ServicoImagem {
     margin-top: 20px;
+   
   }
 
   .ServicoFotos img {
     
-    width: 370px;
+    width: 270px;
   }
   .ServicoFotos button {
     background-color: #33425F;
@@ -173,7 +213,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     animation: crescerDiminuir 2s infinite; /* Adiciona a animação */
-    width: 370px;
+    width: 270px;
     border: none;
   }
   
@@ -182,7 +222,7 @@
     margin-bottom: 30px;
     color: #333;
     font-size: 1rem;
-    margin-inline: 10px ;
+   
   }
 }
 @keyframes crescerDiminuir {

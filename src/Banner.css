@@ -3,8 +3,8 @@
     background-color: #DBEFFA;
     height: auto;
     border-radius: 25px;
-    margin: 20px auto;
-    width: 85%;
+    margin: 20px auto ;
+max-width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

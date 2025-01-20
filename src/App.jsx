@@ -4,7 +4,7 @@ import './App.css';
 import Menu from './Menu';
 import Banner from './Banner';
 import BotaoWhatsapp from './BotaoWhatsapp';
-import Serviços from './Serviços';
+import Serviços from './FeedServicos/Serviços';
 import DepoimentoFeed from './Depoimentos/DepoimentoFeed';
 
 function App() {
