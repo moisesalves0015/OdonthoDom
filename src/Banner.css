@@ -23,11 +23,7 @@
 
     
   }  
-  .containerFotoDominique{
-    display: flex;
-    margin-inline: auto;
-align-items: center;
-  }
+
   .fotoDominique{
    max-width: 460px;
 margin-bottom: -35px;
@@ -153,13 +149,10 @@ margin-bottom: -35px;
       font-size: 0.9rem;
     }
 
-  .containerFotoDominique{
-   margin: 0;
 
 
-        }
         .fotoDominique{
-          max-width: 390px;
+          max-width: 360px;
        margin-bottom: -35px;
          }
   }
