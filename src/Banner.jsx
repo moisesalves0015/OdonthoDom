@@ -19,7 +19,7 @@ function Banner() {
       </div>
       <div className='containerFotoDominique'>
 
-        <img src=".\fotoBannerDom.png" alt="" className="fotoDominique" />
+        <img src=".\fotodom2.svg" alt="" className="fotoDominique" />
       </div>
     </div>
   );

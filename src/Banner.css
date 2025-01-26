@@ -4,31 +4,33 @@
     height: auto;
     border-radius: 25px;
     margin: 20px auto ;
-max-width: 90%;
-height:500px;
-    display: flex;
-
-
+    max-width: 90%;
+    height:500px;
+    display: flex;   
     align-items: center;
     overflow: hidden;
+    background-image: url('fundoBanner.svg');
+    background-size: cover; /* Faz o fundo cobrir toda a área da div */
+    background-position: center; /* Centraliza o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+  
   }
   
   /* Ajustes gerais do conteúdo */
   .BannerConteiner div {
 
     padding: 2rem;
-    max-width: 50%;
+
     
-  }
+  }  
   .containerFotoDominique{
     display: flex;
     margin-inline: auto;
 align-items: center;
   }
   .fotoDominique{
-margin-top: 11rem;
-    
-height: 650px ;
+   max-width: 460px;
+margin-bottom: -35px;
   }
   
   .BannerConteiner div h1 {
@@ -87,9 +89,9 @@ height: 650px ;
   }
   
   /* Responsividade */
-  @media (max-width: 1024px) {
+  /*@media (max-width: 1024px) {
     .BannerConteiner {
-      flex-direction: column; /* Empilha os elementos */
+      flex-direction: column; /* Empilha os elementos 
       height: auto;
       padding: 1.5rem;
     }
@@ -109,7 +111,7 @@ height: 650px ;
     }
   
     .BannerConteiner div section {
-      flex-direction: column; /* Alinha verticalmente */
+      flex-direction: column; /* Alinha verticalmente 
       gap: 1rem;
     }
     
@@ -119,7 +121,7 @@ height: 650px ;
       max-width: 300px;
       margin-inline: auto;
     }
-  }
+  }*/
   
   @media (max-width: 480px) {
 
@@ -128,7 +130,7 @@ height: 650px ;
       flex-direction: column; /* Empilha os elementos */
      
 
-      height: 1000px;
+      height: 820px;
       padding-bottom:0;
 
     }
@@ -151,9 +153,13 @@ height: 650px ;
       font-size: 0.9rem;
     }
 
-    .fotoDominique{
-      margin-top: 1rem;
-          
-      height: 650px ;
+  .containerFotoDominique{
+   margin: 0;
+
+
         }
+        .fotoDominique{
+          max-width: 390px;
+       margin-bottom: -35px;
+         }
   }
