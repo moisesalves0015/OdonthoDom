@@ -17,7 +17,10 @@ function Banner() {
         
         </section>
       </div>
-      <div></div>
+      <div className='containerFotoDominique'>
+
+        <img src=".\fotoBannerDom.png" alt="" className="fotoDominique" />
+      </div>
     </div>
   );
 }

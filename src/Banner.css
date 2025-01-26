@@ -4,19 +4,31 @@
     height: auto;
     border-radius: 25px;
     margin: 20px auto ;
-max-width: 80%;
+max-width: 90%;
+height:500px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+
     align-items: center;
     overflow: hidden;
   }
   
   /* Ajustes gerais do conteúdo */
   .BannerConteiner div {
-    max-width: 50%;
+
     padding: 2rem;
-    justify-content: space-between;
+    max-width: 50%;
+    
+  }
+  .containerFotoDominique{
+    display: flex;
+    margin-inline: auto;
+align-items: center;
+  }
+  .fotoDominique{
+margin-top: 11rem;
+    
+height: 650px ;
   }
   
   .BannerConteiner div h1 {
@@ -110,6 +122,17 @@ max-width: 80%;
   }
   
   @media (max-width: 480px) {
+
+    .BannerConteiner {
+ 
+      flex-direction: column; /* Empilha os elementos */
+     
+
+      height: 1000px;
+      padding-bottom:0;
+
+    }
+    
     .BannerConteiner div h1 {
       font-size: 2rem;
     }
@@ -127,5 +150,10 @@ max-width: 80%;
       height: 45px;
       font-size: 0.9rem;
     }
+
+    .fotoDominique{
+      margin-top: 1rem;
+          
+      height: 650px ;
+        }
   }
-  
