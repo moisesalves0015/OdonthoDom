@@ -3,6 +3,10 @@ import React from 'react';
 import './Serviços.css';
 import ServiçoImplante from './ServiçoImplante';
 import ServiçoOrtondontia from './ServiçoOrtondontia';
+import ServiçoPeriodontia from './ServiçoPeriodontia';
+
+
+
 
 function Serviços() {
   return (
@@ -13,7 +17,7 @@ function Serviços() {
     </div> 
       <ServiçoImplante />
       <ServiçoOrtondontia />
-      <ServiçoImplante />
+      <ServiçoPeriodontia />
       <ServiçoImplante />
     </>
   );
