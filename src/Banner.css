@@ -124,11 +124,17 @@ margin-bottom: -35px;
     .BannerConteiner {
  
       flex-direction: column; /* Empilha os elementos */
-     
-
-      height: 820px;
+      background-image: url('fundoBanner.svg');
+align-content: baseline;
+      height: 810px;
       padding-bottom:0;
 
+
+    }
+    .BannerConteiner div {
+      max-width: 100%;
+      padding: 1.5rem;
+      text-align: center;
     }
     
     .BannerConteiner div h1 {
@@ -153,6 +159,6 @@ margin-bottom: -35px;
 
         .fotoDominique{
           max-width: 360px;
-       margin-bottom: -35px;
+       margin-bottom: -50px;
          }
   }
