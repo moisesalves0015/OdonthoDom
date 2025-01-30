@@ -1,37 +1,45 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './DepoimentoFeed.css';
 
+import NathalieCardoso from './NathalieCardoso.png';
+import RebecaCelestino from './RebecaCelestino.png';
+import IsabeleMoreira from './IsabeleMoreira.png';
+import SimoneMone from './SimoneMone.png';
+import DanielaSouza from './DanielaSouza.png';
+import JuliaGouvêa from './JuliaGouvêa.png';
+
+
 function DepoimentoFeed() {
   const testimonials = [
     {
-      name: 'Maria Silva',
-      photo: 'https://via.placeholder.com/100',
-      text: 'O atendimento foi excelente! Me senti muito confortável e o resultado foi incrível.',
+      name: 'Nathalie Cardoso',
+      photo: NathalieCardoso,
+      text: 'Dra Dominique foi super atenciosa e maravilhosa com meu filho. Ele precisava extrair o dente de leite que não saía e ela com todo carinho e paciência brincou com ele de fazer mágica e arrancou sem nenhuma dor ou trauma. Recomendo seu atendimento e voltarei mais vezes para novos atendimentos.',
     },
     {
-      name: 'João Souza',
-      photo: 'https://via.placeholder.com/100',
-      text: 'Recomendo demais! Todo o processo foi super tranquilo e com ótimos profissionais.',
+      name: 'Rebeca Celestino',
+      photo: RebecaCelestino,
+      text: 'Atendimento maravilhoso! Profissionais incríveis, pacientes e dedicadas! Cada detalhe do procedimento no meu filho foi com muito cuidado e carinho! Eu super recomendo! Também é um ambiente agradável e de fácil acesso.',
     },
     {
-      name: 'Ana Pereira',
-      photo: 'https://via.placeholder.com/100',
-      text: 'Adorei o serviço! Certamente voltarei para outros procedimentos.',
+      name: 'Isabele Moreira',
+      photo: IsabeleMoreira,
+      text: 'Fui muito bem atendida desde a recepção até o atendimento final, profissionais excelentes e bem atenciosas, com certeza voltarei mais vezes, estão de parabéns!! 👏🏻',
     },
     {
-      name: 'Carlos Lima',
-      photo: 'https://via.placeholder.com/100',
-      text: 'Equipe super atenciosa e o resultado ficou perfeito. Muito obrigado!',
+      name: 'Simone Mone',
+      photo: SimoneMone,
+      text: 'Deste a recepção até a doutora foi muito atenciosa,como eu fui arrancar o meu siso estava nervosa ,mas com o jeito meigo da Doutora Dominique tudo deu certo,recomendo e aprovo.',
     },
     {
-      name: 'Fernanda Oliveira',
-      photo: 'https://via.placeholder.com/100',
-      text: 'Simplesmente incrível! Atendimento impecável e resultado excelente.',
+      name: 'Daniela Souza',
+      photo: DanielaSouza,
+      text: 'Gostei muito da clínica, que é super charmosa e confortável. A Dra. Dominique é uma pessoa adorável, extremamente responsável e dedicada. Recomendo a todos !',
     },
     {
-      name: 'Ricardo Santos',
-      photo: 'https://via.placeholder.com/100',
-      text: 'Minha experiência foi ótima. Recomendo muito!',
+      name: 'Julia Gouvêa',
+      photo: JuliaGouvêa,
+      text: 'Atendimento impecável !!! Fiz preenchimento labial e estou simplesmente apaixonada pelo resultado! Procedimento todo SEM DOR! A Doutora tem mãos de fada!',
     },
   ];
 
@@ -61,7 +69,7 @@ function DepoimentoFeed() {
           carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
         }
       }
-    }, 6000);
+    }, 8000);
 
     return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
   }, [isDragging]);

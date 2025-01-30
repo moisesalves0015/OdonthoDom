@@ -13,9 +13,9 @@
   }
   .DepoimentoFeed h1{
 margin-inline: auto;
-font-size: 2rem;
+font-size: 3rem;
 margin-bottom: 2rem;
-font-weight: 500;
+font-weight: 600;
 color: #33425F;
 text-align: center;
 
@@ -35,7 +35,7 @@ text-align: center;
   }
   
   .TestimonialCard {
-    flex: 0 0 33%; /* Ocupa 80% da largura do container */
+    flex: 0 0 350px; /* Ocupa 80% da largura do container */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,11 +60,13 @@ text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #33425F;
   }
   
   .TestimonialText {
     font-size: 1rem;
     color: #555;
+    margin-block: auto;
   }
   @media (max-width: 480px) {
      .Carousel {
