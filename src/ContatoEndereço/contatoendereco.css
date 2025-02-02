@@ -1,0 +1,101 @@
+.Contato {
+padding: 2rem;
+    color: black;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.Contato h3{
+  margin: 1rem;
+  text-align: center;
+
+  }
+  
+
+.ContatoEndereco{
+  background-color: #DBEFFA;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+
+
+
+}
+
+.ContatoEndereco h1{
+
+  margin-inline: auto;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: #181945;
+  text-align: center;
+  
+
+
+}
+
+
+
+.InformaçãoContatoEndereco{
+  background-color: #DBEFFA;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+
+
+
+}
+
+
+.map-section {
+    text-align: center;
+    padding: 5px 2px;
+    background-color: #f9f9f9;
+  }
+  
+  .map-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .map-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 480px) {
+
+    .InformaçãoContatoEndereco{
+ 
+      display: flex;
+    flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    
+    
+    
+    }
+    .Contato {
+
+      max-width: 100%;
+    }
+
+
+  }

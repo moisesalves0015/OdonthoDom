@@ -7,6 +7,9 @@ import BotaoWhatsapp from './BotaoWhatsapp';
 import Serviços from './FeedServicos/Serviços';
 import DepoimentoFeed from './Depoimentos/DepoimentoFeed';
 import Atendentes from './Atendentes/Atendentes'
+import ContatoEndereco from './ContatoEndereço/contatoendereco'
+
+
 function App() {
   return (
     <div className='app'>
@@ -17,6 +20,7 @@ function App() {
       
       <DepoimentoFeed />
       <Atendentes />
+      <ContatoEndereco/>
     </div>
   );
 }
