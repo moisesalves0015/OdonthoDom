@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './DepoimentoFeed.css';
+import { FaStar } from "react-icons/fa";
+
 
 import NathalieCardoso from './NathalieCardoso.png';
 import RebecaCelestino from './RebecaCelestino.png';
@@ -94,6 +96,8 @@ function DepoimentoFeed() {
   return (
     <div className="DepoimentoFeed">
       <h1>O que nossos clientes dizem</h1>
+      <p className="TestimonialDescription">Veja como nossos serviços impactaram positivamente a vida de quem já utilizou.<br></br> Depoimentos sinceros que refletem nossa qualidade e dedicação.</p>
+
       <div
         className="Carousel"
         ref={carouselRef}
@@ -109,7 +113,17 @@ function DepoimentoFeed() {
               className="TestimonialPhoto"
             />
             <h3 className="TestimonialName">{testimonial.name}</h3>
+            
+            <div className='avaliacao'> 
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            </div>
             <p className="TestimonialText">"{testimonial.text}"</p>
+           
+
           </div>
         ))}
       </div>
