@@ -15,6 +15,7 @@ function Atendentes() {
     </div>
 
     <div className=''>
+    <div className='FundoImagemAtendente'></div>
     <img src="./FotoAtendentes.JPEG" alt="" className="fotoAtendentes" />
     </div>
     </div>

@@ -30,9 +30,24 @@
 }
 
 .fotoAtendentes{
-max-width: 350px;
+max-width: 340px;
 border-radius: 25px;
+z-index: 999;
+position:relative;
+margin-right: 30px;
 
+}
+.FundoImagemAtendente{
+    width: 290px;
+    height: 290px;
+    background-color: #E0FFE0;
+    position: absolute;
+  margin-left: 0px;
+    margin-top: -30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    margin-left: 80px;
 }
 
 .atendimento{

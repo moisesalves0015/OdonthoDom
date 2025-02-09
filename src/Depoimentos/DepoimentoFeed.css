@@ -5,9 +5,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;   
+    padding-inline: 1rem; 
+    padding-block: 3rem; 
     overflow: hidden;
-    padding-block: 30px;
+   
   }
   .DepoimentoFeed h1{
 margin-inline: auto;

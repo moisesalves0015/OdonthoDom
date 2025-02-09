@@ -26,6 +26,10 @@ function ContatoEndereco() {
                 <p><strong>Dia:</strong> Segunda à Sexta</p>
                 <p><strong>Horário:</strong> 09:00 AM - 18:00 PM</p>
                 <p><strong>Telefone:</strong> (21) 98440-6294</p>
+                <section>
+                <FaInstagram />
+                <FaFacebookF />
+                </section>
 
 
             </div>
@@ -44,14 +48,6 @@ function ContatoEndereco() {
                         />
 
                     </div>
-                </section>
-                <section>
-                <FaInstagram />
-                <FaFacebookF />
-
-
-
-
                 </section>
 
 
